@@ -1,0 +1,16 @@
+C:\Users\GTS\Desktop\Terkwaz Intership\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\To Do Lists.exe
+C:\Users\GTS\Desktop\Terkwaz Intership\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\To Do Lists.deps.json
+C:\Users\GTS\Desktop\Terkwaz Intership\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\To Do Lists.runtimeconfig.json
+C:\Users\GTS\Desktop\Terkwaz Intership\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\To Do Lists.runtimeconfig.dev.json
+C:\Users\GTS\Desktop\Terkwaz Intership\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\To Do Lists.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\ref\To Do Lists.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\To Do Lists.pdb
+C:\Users\GTS\Desktop\Terkwaz Intership\Tasks\To Do Lists\To Do Lists\obj\Debug\net5.0\To Do Lists.csproj.AssemblyReference.cache
+C:\Users\GTS\Desktop\Terkwaz Intership\Tasks\To Do Lists\To Do Lists\obj\Debug\net5.0\To Do Lists.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GTS\Desktop\Terkwaz Intership\Tasks\To Do Lists\To Do Lists\obj\Debug\net5.0\To Do Lists.AssemblyInfoInputs.cache
+C:\Users\GTS\Desktop\Terkwaz Intership\Tasks\To Do Lists\To Do Lists\obj\Debug\net5.0\To Do Lists.AssemblyInfo.cs
+C:\Users\GTS\Desktop\Terkwaz Intership\Tasks\To Do Lists\To Do Lists\obj\Debug\net5.0\To Do Lists.csproj.CoreCompileInputs.cache
+C:\Users\GTS\Desktop\Terkwaz Intership\Tasks\To Do Lists\To Do Lists\obj\Debug\net5.0\To Do Lists.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Tasks\To Do Lists\To Do Lists\obj\Debug\net5.0\ref\To Do Lists.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Tasks\To Do Lists\To Do Lists\obj\Debug\net5.0\To Do Lists.pdb
+C:\Users\GTS\Desktop\Terkwaz Intership\Tasks\To Do Lists\To Do Lists\obj\Debug\net5.0\To Do Lists.genruntimeconfig.cache
