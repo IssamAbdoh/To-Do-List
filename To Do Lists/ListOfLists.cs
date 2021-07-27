@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 namespace To_Do_Lists
@@ -7,6 +8,8 @@ namespace To_Do_Lists
     public class ListOfLists
     {
         public List<ListOfItems> Lists;
+        private string mainFolderPath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName,"main folder");
+
 
         public ListOfLists()
         {
@@ -37,6 +40,12 @@ namespace To_Do_Lists
             {
                 Lists.Remove(list);
                 Console.WriteLine("You have successfully deleted the list .");
+                if (File.Exists(Path.Combine(mainFolderPath, id.ToString()+".txt")))    
+                {    
+                    // If file found, delete it    
+                    File.Delete(Path.Combine(mainFolderPath, id.ToString()+".txt"));    
+                    //Console.WriteLine("File deleted.");    
+                }
             }
             else
             {

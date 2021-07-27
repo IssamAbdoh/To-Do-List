@@ -34,10 +34,23 @@ namespace To_Do_Lists
         
         static void SaveAllUpdates()
         {
-            string mainPath = @"C:\Users\GTS\Desktop\Terkwaz Intership\Tasks\To Do Lists\main folder";
+            //string mainFolderPath = @"C:\Users\GTS\Desktop\Terkwaz Intership\Tasks\To Do Lists\main folder";
+            string mainFolderPath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName,"main folder");
+
+            /*
+            // Delete all files in a directory    
+            string[] files = Directory.GetFiles(mainFolderPath);    
+            foreach (string file in files)    
+            {    
+                File.Delete(file);    
+                //Console.WriteLine($"{file} is deleted.");    
+            }
+            */
+
+            
             foreach (var list in main.Lists)
             {
-                string filePath = mainPath + @"\" + list.ID + ".txt";
+                string filePath = mainFolderPath + @"\" + list.ID + ".txt";
                 //Console.WriteLine($"File Path : \n{filePath}\n");
 
                 // updateing content 
@@ -146,7 +159,7 @@ namespace To_Do_Lists
             {
                 int id = int.Parse(input);
                 main.DeleteList(id);
-                Console.WriteLine("The list has been deleted successfully !\n");
+                //Console.WriteLine("The list has been deleted successfully !\n");
             }
             else
             {

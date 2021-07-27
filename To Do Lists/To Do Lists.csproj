@@ -6,4 +6,10 @@
         <RootNamespace>To_Do_Lists</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0-preview.5.21301.9" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.0-preview.5.21301.9" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0-preview.5.21301.9" />
+    </ItemGroup>
+
 </Project>
