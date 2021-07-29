@@ -1,21 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.IO;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
-namespace To_Do_Lists
+namespace To_Do_Lists.Data.Entities
 {
+    [Keyless]
     public class ListOfLists
     {
-        public List<ListOfItems> Lists;
-        private string mainFolderPath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName,"main folder");
+        
+        public ICollection<ListOfItems> Lists { get; set; }
 
+        /*
+        //public List<ListOfItems> Lists;
 
+        //private string mainFolderPath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName,"main folder");
+        
+
+        
         public ListOfLists()
         {
             Lists = new List<ListOfItems>();
         }
+        
 
+        
         public void ViewAllLists()
         {
             if (Lists.Count != 0)
@@ -23,7 +34,7 @@ namespace To_Do_Lists
                 Console.WriteLine("List ID\t\t\tTitle of the list");
                 foreach (var list in Lists)
                 {
-                    Console.WriteLine(list.ID + "\t\t\t" + list.ListTitle);
+                    Console.WriteLine(list.ListOfItemsID + "\t\t\t" + list.ListTitle);
                 }
             }
             else
@@ -35,7 +46,7 @@ namespace To_Do_Lists
 
         public void DeleteList(int id)
         {
-            var list = Lists.SingleOrDefault(l => l.ID == id);
+            var list = Lists.SingleOrDefault(l => l.ListOfItemsID == id);
             if (list is not null)
             {
                 Lists.Remove(list);
@@ -56,7 +67,7 @@ namespace To_Do_Lists
 
         public void ChangeListTitle(int id, string title)
         {
-            var list = Lists.SingleOrDefault(l => l.ID == id);
+            var list = Lists.SingleOrDefault(l => l.ListOfItemsID == id);
             if (list is not null)
             {
                 list.ListTitle = title;
@@ -76,12 +87,13 @@ namespace To_Do_Lists
         
         public bool IsExist(int id)
         {
-            var list = Lists.SingleOrDefault(l => l.ID == id);
+            var list = Lists.SingleOrDefault(l => l.ListOfItemsID == id);
             if (list is not null)
             {
                 return true;
             }
             return false;
         }
+        */
     }
 }

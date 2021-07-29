@@ -1,23 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.IO;
 using System.Linq;
 
-namespace To_Do_Lists
+namespace To_Do_Lists.Data.Entities
 {
     public class ListOfItems
     {
-        public List<Item> ToDoList;//solid princebles
-        public string ListTitle;
-        //private string mainFolderPath = @"C:\Users\GTS\Desktop\Terkwaz Intership\Tasks\To Do Lists\main folder";
-        private string mainFolderPath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName,"main folder");
-
+        //public List<Item> ToDoList;
+        public ICollection<Item> ToDoList { get; set; }
         
-        public int ID { get; set; }
+        public ListOfLists main { get; set; }
+        
+        public string ListTitle;
+
+        [Key]
+        public int ListOfItemsID { get; set; }
+
+        /*
+        public string ListTitle;
+
+        private readonly string mainFolderPath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName,"main folder");
 
         public ListOfItems(string listTitle)
         {
-            ID = uniqueID();
+            ListOfItemsID = uniqueID();
             this.ListTitle = listTitle;
             ToDoList = new List<Item>();
         }
@@ -25,7 +33,7 @@ namespace To_Do_Lists
         public ListOfItems(string listTitle, int id)
         {
             //Console.WriteLine(mainFolderPath);
-            this.ID = id;
+            this.ListOfItemsID = id;
             this.ListTitle = listTitle;
             ToDoList = new List<Item>();
         }
@@ -38,7 +46,7 @@ namespace To_Do_Lists
 
         public void DeleteItem(int id)
         {
-            var item = ToDoList.SingleOrDefault(i => i.ID == id);
+            var item = ToDoList.SingleOrDefault(i => i.ItemID == id);
             
             if (item != null)
             {            
@@ -59,13 +67,13 @@ namespace To_Do_Lists
             Console.WriteLine("ID\tItem\n");
             foreach (var t in ToDoList)
             {
-                Console.WriteLine($"{t.ID}\t{t.Text}");
+                Console.WriteLine($"{t.ItemID}\t{t.Text}");
             }
         }
 
         public void EditItem(int id, string newItemText)
         {
-            var item = ToDoList.SingleOrDefault(i => i.ID == id);
+            var item = ToDoList.SingleOrDefault(i => i.ItemID == id);
             
             if (item != null)
             {            
@@ -82,7 +90,7 @@ namespace To_Do_Lists
 
         public bool IsExist(int id)
         {
-            var item = ToDoList.SingleOrDefault(i => i.ID == id);
+            var item = ToDoList.SingleOrDefault(i => i.ItemID == id);
             
             if (item != null)
             {            
@@ -97,11 +105,6 @@ namespace To_Do_Lists
 
         private int uniqueID()
         {
-            /*
-            Console.WriteLine("MAX : "+ _list.Max(i => i.id));
-            return _list.Max(i => i.id) + 1;
-            return items;
-            */
             int id = 1;
             while(File.Exists(mainFolderPath + @"\" + id.ToString() + ".txt"))
             {
@@ -110,5 +113,6 @@ namespace To_Do_Lists
 
             return id;
         }
+        */
     }
 }

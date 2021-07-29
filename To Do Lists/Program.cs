@@ -2,15 +2,44 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
+using To_Do_Lists.Data;
+using To_Do_Lists.Data.Entities;
+using Microsoft.AspNetCore;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+
 
 namespace To_Do_Lists
 {
     class Program
     {
-        static ListOfLists main = new ListOfLists();
+        //static ListOfLists main = new ListOfLists();
+
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+            WebHost.CreateDefaultBuilder(args)
+                .UseStartup<Startup>();
 
         static void Main(string[] args)
         {
+            /*
+            var config = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json")
+                .Build();
+
+            
+            using (var db = new Data.ListDbContext(new DbContextOptionsBuilder<ListDbContext>().Options, config))
+            {
+                db.Database.EnsureCreated();
+                db.SaveChanges();
+            }
+            */
+
+            
+            CreateWebHostBuilder(args).Build().Run();
+
+            /*
             //Setting the lists up 
             
             //creating the main list of lists
@@ -30,27 +59,18 @@ namespace To_Do_Lists
                 }
             } while (true);
             SaveAllUpdates();
+            */
         }
         
+        /*
         static void SaveAllUpdates()
         {
             //string mainFolderPath = @"C:\Users\GTS\Desktop\Terkwaz Intership\Tasks\To Do Lists\main folder";
             string mainFolderPath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName,"main folder");
 
-            /*
-            // Delete all files in a directory    
-            string[] files = Directory.GetFiles(mainFolderPath);    
-            foreach (string file in files)    
-            {    
-                File.Delete(file);    
-                //Console.WriteLine($"{file} is deleted.");    
-            }
-            */
-
-            
             foreach (var list in main.Lists)
             {
-                string filePath = mainFolderPath + @"\" + list.ID + ".txt";
+                string filePath = mainFolderPath + @"\" + list.ListOfItemsID + ".txt";
                 //Console.WriteLine($"File Path : \n{filePath}\n");
 
                 // updateing content 
@@ -176,7 +196,7 @@ namespace To_Do_Lists
             {
                 int id = int.Parse(input);
                 ListOfItems tem;
-                var list = main.Lists.SingleOrDefault(l => l.ID == id);
+                var list = main.Lists.SingleOrDefault(l => l.ListOfItemsID == id);
                 if(list!=null)
                 {
                     tem = list;
@@ -217,7 +237,7 @@ namespace To_Do_Lists
             if ( input != null && input.All(char.IsDigit))
             {
                 int id = int.Parse(input);
-                var list = listOfItems.ToDoList.SingleOrDefault(i => i.ID == id);
+                var list = listOfItems.ToDoList.SingleOrDefault(i => i.ItemID == id);
                 if(list!=null)
                 {
                     Console.WriteLine("Enter the new text of the item \n");
@@ -245,7 +265,7 @@ namespace To_Do_Lists
             if ( input != null && input.All(char.IsDigit))
             {
                 int id = int.Parse(input);
-                var list = listOfItems.ToDoList.SingleOrDefault(i => i.ID == id);
+                var list = listOfItems.ToDoList.SingleOrDefault(i => i.ItemID == id);
                 if(list!=null)
                 {
                     listOfItems.DeleteItem(id);
@@ -389,6 +409,6 @@ namespace To_Do_Lists
                     break;
                 }
             }
-        }
+        }*/
     }
 }
