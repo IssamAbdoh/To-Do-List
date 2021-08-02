@@ -53,3 +53,5 @@ C:\Users\GTS\Desktop\Terkwaz Intership\Tasks\To Do Lists\To Do Lists\bin\Debug\n
 C:\Users\GTS\Desktop\Terkwaz Intership\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\GTS\Desktop\Terkwaz Intership\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\GTS\Desktop\Terkwaz Intership\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\appsettings.json
+C:\Users\GTS\Desktop\Terkwaz Intership\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\To Do Lists.xml
+C:\Users\GTS\Desktop\Terkwaz Intership\Tasks\To Do Lists\To Do Lists\obj\Debug\net5.0\To Do Lists.xml

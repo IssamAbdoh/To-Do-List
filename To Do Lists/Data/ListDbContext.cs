@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
@@ -16,110 +17,111 @@ namespace To_Do_Lists.Data
     {
         private readonly IConfiguration _config;
         
-        public DbSet<Item>ItemsEnumerable { get; set; }
-        public DbSet<ListOfItems>ListOfItemsEnumerable { get; set; }
-        public DbSet<ListOfLists>ListOfListsEnumerable { get; set; }
-        
+        public DbSet<Item>ItemsTable { get; set; }
+        public DbSet<ListOfItems>ListOfItemsTable { get; set; }
+
         public ListDbContext(DbContextOptions options, IConfiguration config) : base(options)
         {
-            Database.EnsureCreated();
-
             _config = config;
-        }
-        
-        /*
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            SqlConnectionStringBuilder conString = new SqlConnectionStringBuilder()
-            {
-                DataSource = @"DESKTOP-UJM2QJ5",
-                InitialCatalog = "ToDoListDB",
-                IntegratedSecurity = true,
-            };
-
-            optionsBuilder.UseSqlServer(conString.ToString());
-            
-            base.OnConfiguring(optionsBuilder);
-        }
-        */
-        
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(_config.GetConnectionString("ToDoListDB"));
-
-            //base.OnConfiguring(optionsBuilder);
         }
 
         protected override void OnModelCreating(ModelBuilder bldr)
         {
-            //bldr.Entity<>()
+            //bldr.Entity<ListOfItems>().HasOne<ListOfLists>().WithMany().HasForeignKey(x => x.ListOfItemsId);
+            //bldr.Entity<Item>().HasOne<ListOfItems>().WithMany().HasForeignKey(x => x.ItemId);
+
             /*
-            bldr.Entity<Camp>()
-                .HasData(new 
-                {
-                    CampId = 1,
-                    Moniker = "ATL2018",
-                    Name = "Atlanta Code Camp",
-                    EventDate = new DateTime(2018, 10, 18),
-                    LocationId = 1,
-                    Length = 1
-                });
-
-            bldr.Entity<Location>()
-                .HasData(new 
-                {
-                    LocationId = 1,
-                    VenueName = "Atlanta Convention Center",
-                    Address1 = "123 Main Street",
-                    CityTown = "Atlanta",
-                    StateProvince = "GA",
-                    PostalCode = "12345",
-                    Country = "USA"
-                });
-
-            bldr.Entity<Talk>()
-                .HasData(new 
-                    {
-                        TalkId = 1,
-                        CampId = 1,
-                        SpeakerId = 1,
-                        Title = "Entity Framework From Scratch",
-                        Abstract = "Entity Framework from scratch in an hour. Probably cover it all",
-                        Level = 100
-                    },
-                    new
-                    {
-                        TalkId = 2,
-                        CampId = 1,
-                        SpeakerId = 2,
-                        Title = "Writing Sample Data Made Easy",
-                        Abstract = "Thinking of good sample data examples is tiring.",
-                        Level = 200
-                    });
-
-            bldr.Entity<Speaker>()
+            bldr.Entity<ListOfLists>()
+            .HasData(new
+            {
+                Id = 1
+            });
+            
+            
+            bldr.Entity<ListOfItems>()
                 .HasData(new
-                {
-                    SpeakerId = 1,
-                    FirstName = "Shawn",
-                    LastName = "Wildermuth",
-                    BlogUrl = "http://wildermuth.com",
-                    Company = "Wilder Minds LLC",
-                    CompanyUrl = "http://wilderminds.com",
-                    GitHub = "shawnwildermuth",
-                    Twitter = "shawnwildermuth"
-                }, new
-                {
-                    SpeakerId = 2,
-                    FirstName = "Resa",
-                    LastName = "Wildermuth",
-                    BlogUrl = "http://shawnandresa.com",
-                    Company = "Wilder Minds LLC",
-                    CompanyUrl = "http://wilderminds.com",
-                    GitHub = "resawildermuth",
-                    Twitter = "resawildermuth"
-                });
-            */
+                    {
+                        ListOfItemsID = 1,
+                        ListTitle = "gym",
+                        mainListid = 1
+                    }
+                    , new
+                    {
+                        ListOfItemsID = 2,
+                        ListTitle = "internship",
+                        mainListid = 1,
+                    }, new
+                    {
+                        ListOfItemsID = 3,
+                        ListTitle = "Typical day",
+                        mainListid = 1
+                    });
+            
+            bldr.Entity<Item>()
+                .HasData(new
+                    {
+                        ItemID = 1,
+                        text = "add",
+                        ListOfItemsID = 1
+                    }, new
+                    {
+                        ItemID = 2,
+                        text = "add",
+                        ListOfItemsID = 1
+                    }, new
+                    {
+                        ItemID = 3,
+                        text = "add",
+                        ListOfItemsID = 1
+                    }
+                    , new
+                    {
+                        ItemID = 4,
+                        text = "learn",
+                        ListOfItemsID = 2
+                    }, new
+                    {
+                        ItemID = 5,
+                        text = "work",
+                        ListOfItemsID = 2
+                    }, new
+                    {
+                        ItemID = 6,
+                        text = "Wake up",
+                        ListOfItemsID = 3
+                    }, new
+                    {
+                        ItemID = 7,
+                        text = "Pray",
+                        ListOfItemsID = 3
+                    }, new
+                    {
+                        ItemID = 8,
+                        text = "Get ready",
+                        ListOfItemsID = 3
+                    }, new
+                    {
+                        ItemID = 9,
+                        text = "Go to the bus station",
+                        ListOfItemsID = 3
+                    }, new
+                    {
+                        ItemID = 10,
+                        text = "Ride a bus",
+                        ListOfItemsID = 3
+                    }, new
+                    {
+                        ItemID = 11,
+                        text = "Read a book on the rode",
+                        ListOfItemsID = 3
+                    }, new
+                    {
+                        ItemID = 12,
+                        text = "Arrive to Terkwaz",
+                        ListOfItemsID = 3
+                    }
+                );
+                */
         }
     }
 }

@@ -5,6 +5,10 @@
         <TargetFramework>net5.0</TargetFramework>
         <RootNamespace>To_Do_Lists</RootNamespace>
     </PropertyGroup>
+    <PropertyGroup>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>$(NoWarn);1591</NoWarn>
+    </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
@@ -19,7 +23,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Data\Migrations" />
+      <Folder Include="Migrations" />
       <Folder Include="wwwroot" />
     </ItemGroup>
 

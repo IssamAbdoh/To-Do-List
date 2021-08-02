@@ -6,13 +6,10 @@ namespace To_Do_Lists.Models
 {
     public class ListOfItemsModel
     {
-        public ICollection<ItemsModel> ToDoList { get; set; }
-        
-        public ListOfListsModel main { get; set; }
-        
-        [Required]
-        public string ListTitle;
+        public int ListOfItemsId { get; set; }
 
-        public int ListOfItemsID { get; set; }
+        public string ListTitle { get; set; }
+
+        public ICollection<ItemsModel> ToDoList { get; set; }
     }
 }

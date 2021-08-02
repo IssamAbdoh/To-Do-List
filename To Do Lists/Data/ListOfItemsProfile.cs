@@ -10,6 +10,7 @@ namespace To_Do_Lists.Data
         {
             this.CreateMap<ListOfItems, ListOfItemsModel>()
                 .ReverseMap();
+            //.ForMember(o=>o.ListOfLists,c=>c.MapFrom(k=>k.));
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
@@ -14,6 +15,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Microsoft.OpenApi.Models;
 using To_Do_Lists.Data;
 
 namespace To_Do_Lists
@@ -40,39 +42,24 @@ namespace To_Do_Lists
       services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
       services.AddControllers();
-
-      //services.AddApiVersioning();
-      /*
-      services.AddApiVersioning(o =>
-      {
-        o.AssumeDefaultVersionWhenUnspecified=true;
-        o.DefaultApiVersion = new ApiVersion(1, 1);
-        
-        o.ReportApiVersions = true;
-        //this will add headers to the responses to say what API versions are going to be 
-        //supported by a certain URI 
-        
-        //now it's
-        //http://localhost:1234/api/camps?api-version=2.0
-        //o.ApiVersionReader = new QueryStringApiVersionReader("ver");
-        //after the line above , it is now :
-        //http://localhost:1234/api/camps?ver=2.0
-
-        //o.ApiVersionReader = new HeaderApiVersionReader("X-Version");
-        //after this line , we are now looking at the headers not the url
-        
-        //this line combines the two versioning methods(Version by header and version by Query string)
-        o.ApiVersionReader = ApiVersionReader.Combine
-        (new QueryStringApiVersionReader("ver", "version", "v"),
-          new HeaderApiVersionReader("X-Version"));
-        
-      });*/
-
       
       services.AddMvc();
       
       //Register the Swagger generator, defining 1 or more Swagger documents
-      services.AddSwaggerGen();
+      // Register the Swagger generator, defining 1 or more Swagger documents
+      services.AddSwaggerGen(c =>
+      {
+        // Set the comments path for the Swagger JSON and UI.
+        var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+        var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+        c.IncludeXmlComments(xmlPath);
+        
+        c.SwaggerDoc("v1", new OpenApiInfo
+        {
+          Title = "To Do Lists Web API",
+          Description = "A Web API for ToDoList Project ; which is used to help you organize and manage your tasks .",
+        });
+      });
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

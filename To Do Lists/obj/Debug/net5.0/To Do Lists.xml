@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>To Do Lists</name>
+    </assembly>
+    <members>
+        <member name="M:To_Do_Lists.Controllers.AgendaController.Get(System.Boolean)">
+            <summary>
+            View All Lists
+            </summary>
+            <param name="includeItems"></param>
+            <returns>Returns all existed Lists</returns>
+            <response code="200">Returns all existed Lists</response>
+            <response code="500">If Something bad happened (Internal Server Error)</response>            
+        </member>
+        <member name="M:To_Do_Lists.Controllers.AgendaController.Post(To_Do_Lists.Models.ListOfItemsModel)">
+             <summary>
+             Create List
+             </summary>
+             <remarks>
+             Sample request:
+             
+                 POST /Todo
+                 {
+                     "listTitle": "string",
+                     "toDoList":
+                     [
+                         {
+                             "text": "string"
+                         },
+                         {
+                             "text": "string"
+                         },
+                         {
+                             "text": "string"
+                         }
+                     ]
+                 }
+            
+             </remarks>
+             <returns>Returns A newly created List</returns>
+             <response code="400">If Couldn't add the list</response>
+             <response code="200">Returns A newly created List</response>
+             <response code="500">If Something bad happened (Internal Server Error)</response>            
+        </member>
+        <member name="M:To_Do_Lists.Controllers.ItemController.Put(System.Int32,System.Int32,To_Do_Lists.Models.ItemsModel)">
+            <summary>
+            Edit the text of an Item
+            </summary>
+            <remarks>
+            Sample request:
+            
+               PUT /Todo
+                {
+                    "itemId": 0,
+                    "text": "string"
+                }
+            </remarks>
+            <param name="ListId"></param>
+            <param name="ItemId"></param>
+            <param name="model"></param>
+            <returns>Returns list with new edits</returns>
+            <response code="404">If The desired item is Not found !</response>
+            <response code="200">Returns The list with new edits !</response>
+            <response code="500">If Something bad happened (Internal Server Error)</response>            
+            <response code="400">If Something wrong has happened ... !</response>
+        </member>
+        <member name="M:To_Do_Lists.Controllers.ItemController.Delete(System.Int32,System.Int32)">
+            <summary>
+            Delete an Item
+            </summary>
+            <param name="ListId"></param>
+            <param name="ItemId"></param>
+            <returns>Returns The status after deletion</returns>
+            <response code="404">If The item you want to delete is already not existed !</response>
+            <response code="200">If item was deleted successfully !</response>
+            <response code="500">If Something bad happened (Internal Server Error)</response>
+            <response code="404">If Could not delete the desired item</response>
+        </member>
+        <member name="M:To_Do_Lists.Controllers.ListController.Get(System.Int32,System.Boolean)">
+            <summary>
+            view One List
+            </summary>
+            <param name="ListId"></param>
+            <param name="includeItems"></param>
+            <returns>Returns The desired List</returns>
+            <response code="200">Returns The desired List</response>
+            <response code="500">If Something bad happened (Internal Server Error)</response>
+            <response code="404">If Couldn't add the list</response>
+        </member>
+        <member name="M:To_Do_Lists.Controllers.ListController.Post(System.Int32,To_Do_Lists.Models.ItemsModel)">
+             <summary>
+             Add Item to a List
+             </summary>
+             <remarks>
+             Sample request:
+             
+                POST /Todo
+                {
+                    "text": "string"
+                }
+            
+             </remarks>
+             <param name="ListId"></param>
+             <param name="model"></param>
+             <returns>Returns The list with the new item added</returns>
+             <response code="404">If The desired list is not existed !</response>
+             <response code="400">If The Text of the task is missing !</response>
+             <response code="201">Returns The list with the new item added</response>
+             <response code="400">If Something wrong has happened ... !</response>
+             <response code="500">If Something bad happened (Internal Server Error)</response>            
+        </member>
+        <member name="M:To_Do_Lists.Controllers.ListController.Put(System.Int32,To_Do_Lists.Models.ListOfItemsModel)">
+             <summary>
+             Add Item to a List
+             </summary>
+             <remarks>
+             Sample request:
+             
+                PUT /Todo
+            {
+                "listTitle": "string",
+                "toDoList": [
+                {
+                    "text": "string"
+                },
+                {
+                    "text": "string"
+                },
+                {
+                    "text": "string"
+                }
+                ]
+            }
+            
+             </remarks>
+             <param name="ListId"></param>
+             <param name="model"></param>
+             <returns>Returns The list with new edits</returns>
+             <response code="404">If The desired list is not existed !</response>
+             <response code="200">Returns The list with new edits !</response>
+             <response code="500">If Something bad happened (Internal Server Error)</response>            
+             <response code="400">If Something wrong has happened ... !</response>
+        </member>
+        <member name="M:To_Do_Lists.Controllers.ListController.Delete(System.Int32)">
+            <summary>
+            Delete a List
+            </summary>
+            <param name="ListId"></param>
+            <returns>Returns The status after deletion</returns>
+            <response code="404">If The list you want to delete is already not existed !</response>
+            <response code="200">If list was deleted successfully !</response>
+            <response code="500">If Something bad happened (Internal Server Error)</response>
+            <response code="404">If Could not delete the desired list</response>
+        </member>
+        <member name="M:To_Do_Lists.Controllers.ListController.Get(System.Int32)">
+            <summary>
+            Checks if a list is existed
+            </summary>
+            <param name="ListId"></param>
+            <returns>Returns The status after searching</returns>
+            <response code="404">If The list that you are trying to retrieve is not existed !</response>
+            <response code="200">If The list is found !</response>
+            <response code="500">If Something bad happened (Internal Server Error)</response>
+        </member>
+    </members>
+</doc>
