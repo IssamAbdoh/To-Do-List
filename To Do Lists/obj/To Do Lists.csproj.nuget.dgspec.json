@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\GTS\\Desktop\\Terkwaz Intership\\Tasks\\To Do Lists\\To Do Lists\\To Do Lists.csproj": {}
+    "C:\\Users\\GTS\\Desktop\\Terkwaz Intership\\Other\\Tasks\\To Do Lists\\To Do Lists\\To Do Lists.csproj": {}
   },
   "projects": {
-    "C:\\Users\\GTS\\Desktop\\Terkwaz Intership\\Tasks\\To Do Lists\\To Do Lists\\To Do Lists.csproj": {
+    "C:\\Users\\GTS\\Desktop\\Terkwaz Intership\\Other\\Tasks\\To Do Lists\\To Do Lists\\To Do Lists.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GTS\\Desktop\\Terkwaz Intership\\Tasks\\To Do Lists\\To Do Lists\\To Do Lists.csproj",
+        "projectUniqueName": "C:\\Users\\GTS\\Desktop\\Terkwaz Intership\\Other\\Tasks\\To Do Lists\\To Do Lists\\To Do Lists.csproj",
         "projectName": "To Do Lists",
-        "projectPath": "C:\\Users\\GTS\\Desktop\\Terkwaz Intership\\Tasks\\To Do Lists\\To Do Lists\\To Do Lists.csproj",
+        "projectPath": "C:\\Users\\GTS\\Desktop\\Terkwaz Intership\\Other\\Tasks\\To Do Lists\\To Do Lists\\To Do Lists.csproj",
         "packagesPath": "C:\\Users\\GTS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\GTS\\Desktop\\Terkwaz Intership\\Tasks\\To Do Lists\\To Do Lists\\obj\\",
+        "outputPath": "C:\\Users\\GTS\\Desktop\\Terkwaz Intership\\Other\\Tasks\\To Do Lists\\To Do Lists\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

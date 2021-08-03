@@ -55,3 +55,60 @@ C:\Users\GTS\Desktop\Terkwaz Intership\Tasks\To Do Lists\To Do Lists\bin\Debug\n
 C:\Users\GTS\Desktop\Terkwaz Intership\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\appsettings.json
 C:\Users\GTS\Desktop\Terkwaz Intership\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\To Do Lists.xml
 C:\Users\GTS\Desktop\Terkwaz Intership\Tasks\To Do Lists\To Do Lists\obj\Debug\net5.0\To Do Lists.xml
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\appsettings.json
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\To Do Lists.exe
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\To Do Lists.deps.json
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\To Do Lists.runtimeconfig.json
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\To Do Lists.runtimeconfig.dev.json
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\To Do Lists.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\ref\To Do Lists.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\To Do Lists.pdb
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\To Do Lists.xml
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\Humanizer.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\obj\Debug\net5.0\To Do Lists.csproj.AssemblyReference.cache
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\obj\Debug\net5.0\To Do Lists.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\obj\Debug\net5.0\To Do Lists.AssemblyInfoInputs.cache
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\obj\Debug\net5.0\To Do Lists.AssemblyInfo.cs
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\obj\Debug\net5.0\To Do Lists.csproj.CoreCompileInputs.cache
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\obj\Debug\net5.0\To Do Lists.csproj.CopyComplete
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\obj\Debug\net5.0\To Do Lists.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\obj\Debug\net5.0\ref\To Do Lists.dll
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\obj\Debug\net5.0\To Do Lists.xml
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\obj\Debug\net5.0\To Do Lists.pdb
+C:\Users\GTS\Desktop\Terkwaz Intership\Other\Tasks\To Do Lists\To Do Lists\obj\Debug\net5.0\To Do Lists.genruntimeconfig.cache

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gUEFRzyXOpJPAo3KYpzGO4JUZhL43Lr7a15x3x73+1Oj+virXdliGJmx/vK38pJQHnqmHpBvoUgLq5EFnWW87g==",
+  "dgSpecHash": "oGUtWRE73rGKgI8bVX0BOhyNjcTwxIkqWS9KHItjG2dpbHjaBPsYV41QRt1MUapp8yoCRt3ZL4cSlPiT/v//cg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\GTS\\Desktop\\Terkwaz Intership\\Tasks\\To Do Lists\\To Do Lists\\To Do Lists.csproj",
+  "projectFilePath": "C:\\Users\\GTS\\Desktop\\Terkwaz Intership\\Other\\Tasks\\To Do Lists\\To Do Lists\\To Do Lists.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\GTS\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\GTS\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

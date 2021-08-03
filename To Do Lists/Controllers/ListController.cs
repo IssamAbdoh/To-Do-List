@@ -29,7 +29,7 @@ namespace To_Do_Lists.Controllers
         }
 
         /// <summary>
-        /// view One List
+        /// View One List
         /// </summary>
         /// <param name="ListId"></param>
         /// <param name="includeItems"></param>
