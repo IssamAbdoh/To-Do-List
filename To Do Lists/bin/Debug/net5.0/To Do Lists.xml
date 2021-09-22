@@ -79,7 +79,7 @@
         </member>
         <member name="M:To_Do_Lists.Controllers.ListController.Get(System.Int32,System.Boolean)">
             <summary>
-            view One List
+            View One List
             </summary>
             <param name="ListId"></param>
             <param name="includeItems"></param>
